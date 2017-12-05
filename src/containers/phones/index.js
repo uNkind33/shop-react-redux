@@ -1,14 +1,15 @@
 import { connect } from 'react-redux'
 
 import Phones from '../../components/phones/';
-import { fetchPhones } from '../../actions';
+import { fetchPhones, loadMorePhones } from '../../actions';
 
-const masStateToPtops = (state) => ({
+const mapStateToPtops = (state) => ({
     phones: state.phones.phones,
 })
 
 const mapDispatchToProps = {
     fetchPhones,
+    loadMorePhones,
 }
 
-export default connect(masStateToPtops, mapDispatchToProps)(Phones)
+export default connect(mapStateToPtops, mapDispatchToProps)(Phones)

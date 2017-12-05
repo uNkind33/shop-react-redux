@@ -7,13 +7,14 @@ class Phones extends Component {
         this.props.fetchPhones()
     }
 
-    shorDescription(desc) {
-        let newDesription = desc.split('').slice(0,57)
+    shorDescription(description) {
+        let newDesription = description.split('').slice(0,57);
         return  newDesription.join('');
     }
 
     renderPhones() {
-        const phones = this.props.phones.map(phone => {
+        const { phones } = this.props;
+        const allPhones = phones.map(phone => {
             return (
                 <div className="col-sm-4 col-lg-4 col-md-4 book-list" key={phone.id}>
                     <div className="thumbnail">
@@ -29,21 +30,37 @@ class Phones extends Component {
                                 </Link>
                             </h4>
                             <p>{this.shorDescription(phone.description)}</p>
+                            <p className="itemButton">
+                                <button className="btn btn-primary">
+                                    Buy now
+                                </button>
+                                <Link to={`phones/${phone.id}`}>
+                                    More info
+                                </Link>
+                            </p>
                         </div>
                     </div>
                 </div>
             )
         })
-        return phones;
+        return allPhones;
     }
 
     render() {
-        console.log(this.props.phones)
+        const { loadMorePhones } = this.props;
         return (
             <div>
-                <ul>
-                    {this.renderPhones()}
-                </ul>
+                {this.renderPhones()}
+                <div className="row">
+                    <div className="col-md-12">
+                        <button 
+                            onClick={loadMorePhones}
+                            className="pull-right btn-primary"    
+                        >
+                            Load more
+                        </button>
+                    </div>
+                </div>
             </div>
         );
     }

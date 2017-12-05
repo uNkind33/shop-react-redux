@@ -1,3 +1,9 @@
+const iphone5 = require('../../src/assets/images/iphone5c-selection-hero-2013.png');
+const samsungGalaxy = require('../../src/assets/images/Agnes_Case_for_Samsung_Galaxy_S6_(1)__92643_thumb.jpg');
+const htcOne = require('../../src/assets/images/htc-one-m7-802w-dual-sim-silver.jpg');
+const nokiaLumia = require('../../src/assets/images/Lumia1520-Front-Back-png.png');
+const lenovo = require('../../src/assets/images/_35 (1).JPG');
+const iphone6 = require('../../src/assets/images/51u6y9Rm8QL._SY300_.jpg');
 export default [
     {
         id: '1',
@@ -5,7 +11,7 @@ export default [
         name: 'Apple iPhone 5c',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
         price: 823,
-        image: '/uploads/iphone5c-selection-hero-2013.png',
+        image: iphone6,
         cpu: '1.3GHz Apple A6',
         camera: '8mp (3264x2448)',
         size: '124.4mm x 59.2mm x 8.97mm (4.9 x 2.33 x 0.35)',
@@ -20,7 +26,7 @@ export default [
         name: 'Apple iPhone 6',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
         price: 953,
-        image: '/uploads/51u6y9Rm8QL._SY300_.jpg',
+        image: iphone5,
         cpu: '1.3GHz Apple A6',
         camera: '8mp (3264x2448)',
         size: '124.4mm x 59.2mm x 8.97mm (4.9 x 2.33 x 0.35)',
@@ -35,7 +41,7 @@ export default [
         name: 'Lenovo A6000',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
         price: 764,
-        image: '/uploads/_35%20(1).JPG',
+        image: lenovo,
         cpu: '1.3GHz Apple A6',
         camera: '8mp (3264x2448)',
         size: '124.4mm x 59.2mm x 8.97mm (4.9 x 2.33 x 0.35)',
@@ -50,7 +56,7 @@ export default [
         name: 'Nokia Lumia 1520',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
         price: 674,
-        image: '/uploads/Lumia1520-Front-Back-png.png',
+        image: nokiaLumia,
         cpu: '1.3GHz Apple A6',
         camera: '8mp (3264x2448)',
         size: '124.4mm x 59.2mm x 8.97mm (4.9 x 2.33 x 0.35)',
@@ -65,7 +71,7 @@ export default [
         name: 'HTC One',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
         price: 674,
-        image: '/uploads/htc-one-m7-802w-dual-sim-silver.jpg',
+        image: htcOne,
         cpu: '1.3GHz Apple A6',
         camera: '8mp (3264x2448)',
         size: '124.4mm x 59.2mm x 8.97mm (4.9 x 2.33 x 0.35)',
@@ -80,7 +86,7 @@ export default [
         name: 'Samsung Galaxy S6',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
         price: 674,
-        image: '/uploads/Agnes_Case_for_Samsung_Galaxy_S6_(1)__92643_thumb.jpg',
+        image: samsungGalaxy,
         cpu: '1.3GHz Apple A6',
         camera: '8mp (3264x2448)',
         size: '124.4mm x 59.2mm x 8.97mm (4.9 x 2.33 x 0.35)',
